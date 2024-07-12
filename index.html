@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles/formulario.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title-text">
+        <h1>Test de River Plate</h1>
+        <p>Jugá y demostrá cuánto sabés acerca del Millonario</p>
+      </div>
+    </header>
+    <section class="formulario">
+      <form method="post" action="">
+        <label>Correo Electrónico:</label>
+        <input type="email" id="mail" name="email" required />
+        <br />
+        <label>Nombre y apellido:</label>
+        <input type="text" id="nom-ape" name="nom-ape" required />
+        <br />
+        <label>Fecha de Nacimiento:</label>
+        <input type="date" id="fecha" name="fecha" required />
+        <br />
+        <label
+          >1. ¿En qué año Ríver ganó el torneo local y uno internacional en la
+          misma semana?</label
+        >
+        <br />
+        <select name="pregunta" required>
+          <option value="" disabled selected>Elige una opción</option>
+          <option value="1996">1996</option>
+          <option value="1999">1999</option>
+          <option value="1997">1997</option>
+        </select>
+        <br />
+        <label
+          >2. ¿En qué año River dio la vuelta olímpica en cancha de Boca?</label
+        >
+        <br />
+        <select name="pregunta2" required>
+          <option value="" disabled selected>Elige una opción</option>
+          <option value="1983">1983</option>
+          <option value="1987">1987</option>
+          <option value="1986">1986</option>
+          <option value="1985">1985</option>
+        </select>
+        <br />
+        <label>3. ¿A qué idolo de Ríver le dicen "el matador"?</label>
+        <br />
+        <select name="pregunta3" required>
+          <option value="" disabled selected>Elige una opción</option>
+          <option value="Salas">Salas</option>
+          <option value="Alonso">Alonso</option>
+          <option value="Ortega">Ortega</option>
+          <option value="Francescoli">Francescoli</option>
+        </select>
+        <br />
+        <label>4. ¿Cuántos campeonatos argentinos ganó Ríver?</label>
+        <br />
+        <select name="pregunta4" required>
+          <option value="" disabled selected>Elige una opción</option>
+          <option value="33">33</option>
+          <option value="35">35</option>
+          <option value="38">38</option>
+        </select>
+        <br />
+        <label>5. ¿En qué año se inauguró el Estadio Monumental?</label>
+        <br />
+        <select name="pregunta5" required>
+          <option value="" disabled selected>Elige una opción</option>
+          <option value="1920">1920</option>
+          <option value="1938">1938</option>
+          <option value="1942">1942</option>
+          <option value="1930">1930</option>
+        </select>
+        <br />
+        <label
+          >6. ¿A la compra de qué jugador se debe el apodo "Millonarios"?</label
+        >
+        <br />
+        <select name="pregunta6" required>
+          <option value="" disabled selected>Elige una opción</option>
+          <option value="Adolfo Pedernera">Adolfo Pedernera</option>
+          <option value="José Manuel Moreno">José Manuel Moreno</option>
+          <option value="Carlos Peucelle">Carlos Peucelle</option>
+          <option value="Bernabé Ferreyra">Bernabé Ferreyra</option>
+        </select>
+        <br />
+        <p>7. ¿Qué jugador le hizo más goles a Boca en toda la historia?</p>
+        <div class="radio-group">
+          <input type="radio" name="pregunta7" value="Alonso" required />
+          <label>Alonso</label>
+        </div>
+        <div class="radio-group">
+          <input type="radio" name="pregunta7" value="Crespo" required />
+          <label>Crespo</label>
+        </div>
+        <div class="radio-group">
+          <input type="radio" name="pregunta7" value="Artime" required />
+          <label>Artime</label>
+        </div>
+        <div class="radio-group">
+          <input type="radio" name="pregunta7" value="Labruna" required />
+          <label>Labruna</label>
+        </div>
+        <br />
+        <label for="anios"
+          >8. ¿Cuántos años pasaron de sequía pasaron sin títulos hasta que
+          llegó Labruna y nos sacó campeones? (10-20):</label
+        >
+        <input type="range" name="anios" min="10" max="20" required />
+        <br />
+        <label for="edad">9. ¿En qué año se fundó el club?</label>
+        <input type="number" name="fundacion" required />
+        <br />
+        <label
+          >10. ¿Cuál fue el color de la camiseta alternativa 18/19? Buscala por
+          Internet</label
+        >
+        <input type="color" name="color" />
+        <br />
+        <p>Pregunta extra: ¿Cuál es el día tan especial?</p>
+        <div class="checkbox-group">
+          <input type="checkbox" name="dia" value="9-12-18" />
+          <label>9/12/18</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" name="dia" value="9-12" />
+          <label>9/12</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" name="dia" value="duele" />
+          <label>Y como te duele...</label>
+        </div>
+        <br />
+        <label>Elige la imagen favorita: </label>
+        <img id="imagenSlide" src="/imagenes/river-1.png" alt="" />
+        <div class="slider">
+          <input type="radio" name="imagen" id="radio1" value="imagen1" />
+          <br />
+          <input type="radio" name="imagen" id="radio2" value="imagen2" />
+          <br />
+          <input type="radio" name="imagen" id="radio3" value="imagen3" />
+          <br />
+          <input type="radio" name="imagen" id="radio4" value="imagen4" />
+          <br />
+        </div>
+        <input type="submit" value="Enviar" />
+        <button type="reset">Resetear</button>
+      </form>
+    </section>
+    <script src="/script/slider.js"></script>
+    <script src="/script/validaciones.js"></script>
+  </body>
+</html>
